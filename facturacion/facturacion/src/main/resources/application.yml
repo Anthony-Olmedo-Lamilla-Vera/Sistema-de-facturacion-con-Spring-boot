@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/facturacion
+    username: postgres
+    password: 123
+  jpa:
+    hibernate:
+      show-sql: true
+      ddl-auto: update
+  application:
+    name: facturacion-service
+
+server:
+  port: 8090
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
